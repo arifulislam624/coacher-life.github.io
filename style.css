@@ -1,0 +1,653 @@
+@font-face {
+    font-family: abc;
+    src: url(fonts/MYRIADPRO-REGULAR.OTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: abc;
+    line-height: calc(.5rem + 1vw);
+    color: #565554;
+    
+}
+
+h1,h3{
+    font-size: calc(1.5rem + 1vw);
+    font-weight: 100;
+    line-height: calc(2.3rem + 1vw);
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+.uni-padding{
+    padding: 0 20%;
+}
+.btn{
+    text-decoration: none;
+    background-color: #f4b200;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 35px;
+    display: inline-block;
+    border-radius: 25px;
+    transition: all .4s ease;
+    
+}
+.btn:hover{
+    box-shadow: 1px 1px 7px 2px #ccc;
+}
+#header{
+    height: 100vh;
+    background: url('image/Life-coach.png'), url('image/self.png'),url('image/Life-coach-2.png'),#faf9f6;
+    background-repeat: no-repeat;
+    background-size: 40% ,25% ,45%;
+    background-position: left top, 80% bottom,right center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+#header nav #logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: calc(1rem + 1vw);
+
+}
+#logo p{
+    color: white;
+}
+#header nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+#header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: calc(0.5rem + 0.5vw);
+}
+
+/*heder style end*/
+
+#content{
+    padding-top: 110px;
+}
+#content p{
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-weight: 100;   
+}
+#gap{
+    margin-bottom: 60px;
+}
+
+/*row design*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+
+}
+.box3{
+    background-color: #ffffff;
+    flex-basis: 33%;
+    padding: 20px 30px;
+    position: relative;
+    box-shadow: 2px 3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.box3 h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.box3 p{
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 35px;
+}
+.box3 a{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color:#e88651;
+    padding: 10px ;
+    width: 40px;
+    height: 40px;
+    border-radius: 55%;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    bottom: -20px;
+    left: 40%;
+}
+
+
+
+/*section style*/
+
+#stuck{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#stuck h1,#pera{
+    text-align: center;
+}
+#stuck .col3{
+    flex-basis: 33%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+.fas{
+    color:  #565554;
+    font-size: calc(2rem + 2vw);
+    padding-bottom: 20px;
+}
+#stuck .col3 h2{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 20px 0;
+}
+#stuck .col3 p{
+    text-align:left;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+
+/*end style stuck*/
+
+#about-me{
+    background:url(image/self-2.png),#faf9f6;
+    background-repeat: no-repeat;
+    background-position: 70% center;
+    background-size: 60%;
+    
+}
+.self{
+    width: 40%;
+    padding: 100px 0;
+}
+.self h1{
+    padding-bottom: 50px;
+}
+.self p{
+    text-align: left;
+    font-weight: 100;
+    font-size: 15px;
+    padding-bottom: 50px;
+    line-height: 30px;
+}
+.self .link{
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-weight: 400;
+    border-bottom: 1px solid gray;
+}
+.self .button{
+    padding-top: 50px;
+}
+.btn2{
+    text-decoration: none;
+    background-color:white;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 35px;
+    display: inline-block;
+    border-radius: 25px;
+    transition: all .4s ease;
+    margin-left: 10px;
+}
+
+/* about me style end */
+
+#repu{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #e7e7e7;
+}
+#repu .row .box__4{
+    flex-basis: 25%;
+    
+}
+.box__4 h2{
+    font-size: 40px;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+.box__4 h3{
+    font-size: 20px;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+/* repu section style end */
+
+#course{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #faf9f6;
+}
+#head{
+    font-weight: 300;
+    text-align: center;
+}
+#course .box__3{
+    flex-basis: 31%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 10px 4px rgba(0,0,0,0.1);
+}
+#course .box__3 img{
+    width: 100%;
+}
+#course .box__3 h1{
+    font-size: 20px;
+    font-weight: 900;
+}
+#course .box__3 p{
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 100;
+}
+#seminar{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#seminar h1{
+    text-align: center;
+    font-weight: 500;
+}
+#seminar .box-4{
+    flex-basis: 24%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 3px 5px 10px 4px rgba(0,0,0,0.1);
+}
+
+#seminar .box-4 h2{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+#seminar .box-4 img{
+    width: 100%;
+}
+#seminar .box-4 p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#seminar .box-4 .icon{
+    border-top: 1px solid black;
+}
+#seminar .box-4 .fab{
+    text-decoration: none;
+    color:lightgray;
+    padding: 7px;
+}
+
+
+
+
+#clients{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #faf9f6;
+}
+#clients h1{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+#clients .parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 10px;
+}
+.vertical{
+    grid-row: auto / span 2;
+}
+#clients .parent .boxx{
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 3px 5px 10px 4px rgba(0,0,0,0.1);
+}
+}
+#clients .parent .boxx .fas{
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color:gray;
+    color: orange;
+    width: 50px;
+    height: 50px;
+}
+#clients .parent .boxx h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+#clients .parent .boxx p{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+
+/*subscribe section start*/
+
+#subscribe{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #faf9f6;
+}
+#subscribe h2{
+    padding-bottom: 20px;
+}
+#subscribe .form input[type="text"]{
+    width: 70%;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid lightgray;
+    text-indent: 40px;
+}
+#subscribe .form a{
+    margin-left: 20px;
+}
+#subscribe .form p{
+    padding: 20px 0;
+    font-size: 15px;
+    font-weight: 200;
+    color: gray;
+}
+
+
+/*contact us div start*/
+
+#contact{
+    background-color: #efefef;
+    padding-bottom: 140px;
+}
+
+.main-box{
+    background-color:#ffffff;
+    padding: 30px;
+    display: flex;
+    margin-top: -70px;
+    box-shadow: 3px 5px 10px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+.box-1{
+    flex-basis: 40%;
+}
+.box-2{
+    flex-basis: 60%;
+}
+.box-1 h1{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+.box-1 address{
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.box-1 p{
+    font-size: 15px;
+    font-weight: 100;
+    color: gray;
+    margin-bottom: 6px;
+}
+
+.box-2 h1{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+.box-2 input[type="text"]{
+    border: 1px solid lightgray;
+    outline: none;
+    padding: 7px 50px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+::placeholder{
+    color: lightgray;
+}
+textarea{
+    resize: none;
+    width: 97%;
+    outline: none;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    height:150px;
+}
+#right{
+    margin-top: 10px;
+}
+
+/* <stie style start */
+
+#site{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: lightgray;
+}
+
+.col__4{
+    flex-basis: 25%;
+}
+.col__4 img{
+    filter: grayscale(100%);
+    transition: all .3s ease;
+}
+.col__4 img:hover{
+    filter: grayscale(0);
+}
+
+
+.fa-times,.fa-bars{
+    display: none;
+}
+
+footer{
+    background-color: orange;
+   
+
+}
+footer h2{
+    font-weight: 200;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+/* responsive design for ipad */
+
+
+@media only screen and (max-width:786px){
+    .uni-padding{
+        padding: 0 10%;
+    }
+    #header{
+        height: auto;
+        background: url('image/Life-coach.png'),url('image/Life-coach-2.png'),#faf9f6;
+        background-repeat: no-repeat;
+        background-size: 50% ,80%;
+        background-position: left top,right bottom;
+        
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .box3{
+        flex-basis: 45%;
+        margin-bottom: 20px;
+    }
+
+    #stuck .col3{
+        flex-basis: 40%;
+    }
+    #about-me{
+        text-align: center;
+    }
+    #about-me .self{
+        margin: 0 auto;
+        width: 100%;
+    }
+    #about-me .self .link{
+        margin-bottom: 10px;
+    }
+    
+    #course .box__3{
+        flex-basis: 45%;
+        margin-bottom: 20px;
+        
+    }
+    #seminar .box-4{
+        flex-basis: 47%;
+        margin-bottom: 20px;
+    }
+    #site .col__4{
+        flex-basis: 48%;
+        margin-bottom: 10px;
+
+    }
+
+}
+
+/* media query for mobile */
+
+
+@media only screen and (max-width:486px){
+    .uni-padding{
+        padding: 0 5%;
+    }
+    #header{
+        height: auto;
+        background: url('image/Life-coach.png'),url('image/Life-coach-2.png'),#faf9f6;
+        background-repeat: no-repeat;
+        background-size: 110% ,100%;
+        background-position: left top,right bottom;
+        
+    }
+    .fa-bars, .fa-times{
+        display: block;
+        color: #ffffff;
+        margin: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #header nav #logo p{
+        font-size: 30px;
+    }
+    #header nav #menu{
+        position: absolute;
+        background-color: black;
+        height: 100vh;
+        width: 300px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 22;
+        transition: all 1s ease;
+    }
+    #header nav #menu ul li{
+        display: block;
+        margin: 50px 20px;
+    }
+    #header nav #menu ul li a{
+        font-size: 20px;
+        color: white;
+    }
+    #content{
+        margin: 0 auto;
+        text-align: center;
+        padding:50px;
+    }
+    #content p{
+        line-height: 20px;
+    }
+    #content #gap{
+        margin: 0;
+    }
+    .row{
+        flex-wrap: wrap;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .box3{
+        flex-basis: 90%;
+        margin-bottom: 20px;
+    }
+
+    #stuck .col3{
+        flex-basis: 90%;
+        text-align: center;
+    }
+    #repu .row .box__4{
+        flex-basis: 50%;
+        text-align: center;
+    }
+    /*
+    #about-me{
+        text-align: center;
+    }
+    #about-me .self{
+        margin: 0 auto;
+        width: 100%;
+    }
+    #about-me .self .link{
+        margin-bottom: 10px;
+    }
+*/
+
+
+
+    #course .box__3{
+        flex-basis: 80%;
+        margin-bottom: 20px;
+        
+    }
+    #seminar .box-4{
+        flex-basis: 80%;
+        margin-bottom: 20px;
+    }
+    #site .col__4{
+        flex-basis: 48%;
+        margin-bottom: 10px;
+
+    }
+    #subscribe{
+        text-align: center;
+    }
+    #subscribe .form{
+        text-align: center;
+    }
+    #subscribe .form input{
+        margin-bottom: 10px;
+    }
+    #contact .main-box{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    #contact .main-box .box-1, .box-2{
+        flex-basis: 80%;
+    }
+
+}
